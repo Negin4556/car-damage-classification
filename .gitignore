@@ -1,0 +1,30 @@
+# سیستم‌عامل و فایل‌های موقت سیستم
+.DS_Store
+Thumbs.db
+
+# محیط‌های مجازی پایتون (Virtual Environments)
+venv/
+.venv/
+env/
+ENV/
+
+# پوشه‌های حافظه پنهان پایتون
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# دیتاست‌های پروژه (برای جلوگیری از آپلود تصاویر سنگین روی گیت‌هاب)
+dataset/
+dataset_split/
+data/
+
+# وزن‌های مدل آموزش‌دیده (فایل‌های حجیم)
+*.pth
+*.pt
+*.onnx
+
+# فایل‌های خروجی نمودار یا نتایج موقت (اختیاری)
+# training_curves.png
+
