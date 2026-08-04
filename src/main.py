@@ -155,5 +155,5 @@ with torch.no_grad():
             
     print(f"Test Accuracy: {100 * test_correct / test_total:.2f}%")
 
-if name == "main":
+if name == "__main__":
     main()
