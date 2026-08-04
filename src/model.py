@@ -62,7 +62,7 @@ def predict_image(image_path, model_path="best_car_damage_model.pth", class_name
     class_idx = predicted.item()
     return class_names[class_idx]
 
-if name == "main":
+if name == "__main__":
     # مثال برای اجرا
     # result = predict_image("path_to_test_image.jpg")
     # print("Predicted Class:", result)
