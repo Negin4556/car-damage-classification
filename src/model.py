@@ -2,7 +2,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class CarDamageCNN(nn.Module):
-    def init(self):
+    def __init__(self):
         super(CarDamageCNN, self).init()
         # لایه کانولوشن اول: ورودی 3 کانال (RGB)، خروجی 32 کانال، فیلتر 3x3
         self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=1)
