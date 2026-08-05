@@ -3,7 +3,7 @@ import torch.nn.functional as F
 
 class CarDamageCNN(nn.Module):
     def __init__(self):
-        super(CarDamageCNN, self).init()
+        super(CarDamageCNN, self).__init__()
         # لایه کانولوشن اول: ورودی 3 کانال (RGB)، خروجی 32 کانال، فیلتر 3x3
         self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=1)
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
@@ -62,7 +62,7 @@ def predict_image(image_path, model_path="best_car_damage_model.pth", class_name
     class_idx = predicted.item()
     return class_names[class_idx]
 
-if name == "__main__":
+if __name__ == "__main__":
     # مثال برای اجرا
     # result = predict_image("path_to_test_image.jpg")
     # print("Predicted Class:", result)
